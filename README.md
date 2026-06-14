@@ -1,11 +1,14 @@
-# FindSomething
-FindSomething，基于浏览器插件的被动式信息提取工具  
-首发于陌陌安全 https://security.immomo.com/blog/145
-## chrome插件
-1. 直接访问 https://chrome.google.com/webstore/detail/findsomething/kfhniponecokdefffkpagipffdefeldb  
-2. 或使用chrome开发者模式加载源码。
-## firefox插件
-1. 直接访问 https://addons.mozilla.org/zh-CN/firefox/addon/findsomething/
-2. 或切换到firefox分支，使用“调试附加组件”加载。  
+# 🦅 DZsecret
 
-欢迎一起交流，微信搜索canxiao_xiao
+**First Algerian grep-style tool for extracting everything from webpages.**
+
+Finds: IPs, domains, URLs, paths, endpoints, emails, phones, API keys, tokens, passwords, JWT, ID cards, and more.
+
+- Scans HTML + inline scripts
+- Fetches external JS files
+- One-click copy
+
+## Install
+`chrome://extensions` → Developer mode → Load unpacked
+
+🇩🇿 Made in Algeria | License: GPL-3.0
