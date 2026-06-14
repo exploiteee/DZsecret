@@ -3,82 +3,140 @@
 @Author  : residuallaugh 
 -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">    
 </head>
-<body style="width:780px; font-size: 14px;">
+<body style="width:780px; font-size: 14px; background: #0a0a0a;">
+
+    <!-- Header Tabs - Only colors changed -->
     <div style="width:780px; height: 30px; margin-left: 15px;">
-        <a href="popup.html"><div id="Zhuye" style="width: 55px; height: 28px; float: left; text-align: center; line-height: 28px; font-size: 14px; background: #000000; color: #ffffff; border: 1px solid black;border-radius: 2px 0px 0px 2px;">主页</div></a>
-        <a href="settings.html"><div id="Peizhi" style="width: 55px; height: 28px; float: left; text-align: center; line-height: 28px; font-size: 14px; background: #ffffff; color: #000000; border: 1px solid black;border-radius: 0px 2px 2px 0px;">配置</div></a>
+        <a href="popup.html"><div id="Zhuye" style="width: 55px; height: 28px; float: left; text-align: center; line-height: 28px; font-size: 14px; background: #f78166; color: #000; border: 1px solid #f78166; border-radius: 2px 0px 0px 2px;">Home</div></a>
+        <a href="settings.html"><div id="Peizhi" style="width: 55px; height: 28px; float: left; text-align: center; line-height: 28px; font-size: 14px; background: #1a1a1a; color: #fff; border: 1px solid #333; border-radius: 0px 2px 2px 0px;">Settings</div></a>
     </div>
+    
     <div style="width:780px; height: 800px; margin-left: 15px;">
-        <div id="taskstatus" style="height: 34px; line-height: 34px;"></div>
-        <div style="width: 256px; float: left; border-right: 1px solid #e8e8e8;">
-            <div class="DZsecret_title" id="popupIp">IP</div><button type="button" class="copy" name="ip">复制</button>
-            <p id="ip" style="word-break:break-word;">🈚️</p>
-            <div class="DZsecret_title" id="popupIpPort">IP_PORT</div><button class="copy" name="ip_port">复制</button>
-            <p id="ip_port" style="word-break:break-word;">🈚️</p>
-            <div class="DZsecret_title" id="popupDomain">域名</div><button class="copy" name="domain">复制</button>
-            <p id="domain" style="word-break:break-word;">🈚️</p>
-            <div class="DZsecret_title" id="popupSfz">身份证</div><button class="copy" name="sfz">复制</button>
-            <p id="sfz" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupMobile">手机号</div><button class="copy" name="mobile">复制</button>
-            <p id="mobile" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupMail">邮箱</div><button class="copy" name="mail">复制</button>
-            <p id="mail" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupJwt">JWT<button class="copy" name="jwt">复制</button></div>
-            <p id="jwt" style="word-break:break-word;">🈚️</p>
-            <div class="DZsecret_title" id="popupAlgorithm">算法</div><button class="copy" name="algorithm">复制</button>
-            <p id="algorithm" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupSecret">Secret</div><button class="copy" name="secret">复制</button>
-            <p id="secret" style="">🈚️</p>
+        
+        <!-- Status bar - only color changed -->
+        <div id="taskstatus" style="height: 34px; line-height: 34px; color: #f78166;"></div>
+        
+        <!-- Left Panel - only border color changed -->
+        <div style="width: 256px; float: left; border-right: 1px solid #1a1a1a;">
+            <div class="DZsecret_title" id="popupIp">IP</div>
+            <button type="button" class="copy" name="ip">Copy</button>
+            <p id="ip" style="word-break:break-word; color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupIpPort">IP_PORT</div>
+            <button class="copy" name="ip_port">Copy</button>
+            <p id="ip_port" style="word-break:break-word; color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupDomain">Domain</div>
+            <button class="copy" name="domain">Copy</button>
+            <p id="domain" style="word-break:break-word; color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupSfz">ID Card</div>
+            <button class="copy" name="sfz">Copy</button>
+            <p id="sfz" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupMobile">Phone</div>
+            <button class="copy" name="mobile">Copy</button>
+            <p id="mobile" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupMail">Email</div>
+            <button class="copy" name="mail">Copy</button>
+            <p id="mail" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupJwt">JWT</div>
+            <button class="copy" name="jwt">Copy</button>
+            <p id="jwt" style="word-break:break-word; color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupAlgorithm">Algorithm</div>
+            <button class="copy" name="algorithm">Copy</button>
+            <p id="algorithm" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupSecret">Secret</div>
+            <button class="copy" name="secret">Copy</button>
+            <p id="secret" style="color: #ccc;">None</p>
         </div>
+        
+        <!-- Right Panel -->
         <div style="width: 480px; height: 800px; float: left; margin-left:16px;">
-            <div class="DZsecret_title" id="popupPath">Path</div><button id="path_button" class="copy" name="path">复制</button><button id="popupCopyurl" class="copy" name="path">复制URL</button>
-            <p id="path" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupIncompletePath">IncompletePath</div><button class="copy" name="incomplete_path">复制</button>
-            <p id="incomplete_path" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupUrl">Url</div><button class="copy" name="url">复制</button>
-            <p id="url" style="">🈚️</p>
-            <div class="DZsecret_title" id="popupStaticPath">StaticUrl</div><button class="copy" name="static">复制</button>
-            <p id="static" style="">🈚️</p>
+            <div class="DZsecret_title" id="popupPath">Path</div>
+            <button id="path_button" class="copy" name="path">Copy</button>
+            <button id="popupCopyurl" class="copy" name="path">Copy URL</button>
+            <p id="path" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupIncompletePath">IncompletePath</div>
+            <button class="copy" name="incomplete_path">Copy</button>
+            <p id="incomplete_path" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupUrl">Url</div>
+            <button class="copy" name="url">Copy</button>
+            <p id="url" style="color: #ccc;">None</p>
+            
+            <div class="DZsecret_title" id="popupStaticPath">StaticUrl</div>
+            <button class="copy" name="static">Copy</button>
+            <p id="static" style="color: #ccc;">None</p>
         </div>
-</div>
+    </div>
 </body>
-<!-- <script src="jquery-3.6.0.min.js"></script> -->
 <script src="popup.js"> </script>
+
 <style type="text/css">
+    /* Copy buttons - only color changed */
     .copy {
         border-style: none;
-        background-color: #ffffff;
+        background-color: #f78166;
+        color: #000;
         float: right;
         margin-right: 16px;
-        
+        border-radius: 4px;
+        padding: 2px 8px;
+        cursor: pointer;
+        font-weight: bold;
     }
+    
+    .copy:hover {
+        background-color: #ff9066;
+    }
+    
+    /* Titles - only border color changed */
     .DZsecret_title {
         font-size: 16px;
         font-weight: bold;
-        border-left: 4px solid black;
+        border-left: 4px solid #f78166;
         text-indent: 4px;
         height: 16px;
         line-height: 16px;
+        color: #fff;
     }
+    
+    /* Tips icon - only color changed */
     .tips {
         display: inline-block;
         border-top: 0.2px solid;
         border-right: 0.2px solid;
         width: 10px;
         height: 10px;
-        border-color: #EA6000;
+        border-color: #f78166;
         transform: rotate(-135deg);
     }
-    a{
-        text-decoration:none;
-        color:#333;
+    
+    a {
+        text-decoration: none;
+        color: #f78166;
     }
-    button{
-        cursor: pointer
+    
+    button {
+        cursor: pointer;
+    }
+    
+    /* Data boxes - subtle dark background */
+    p {
+        background: #0f0f0f;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #1a1a1a;
     }
 </style>
 </html>
