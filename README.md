@@ -1,4 +1,3 @@
-![DZsecret Banner](banner.png)
 
 # 🦅 DZsecret
 
