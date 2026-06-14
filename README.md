@@ -8,9 +8,7 @@ Finds: IPs, domains, URLs, paths, endpoints, emails, phones, API keys, tokens, p
 - Scans HTML + inline scripts
 - Fetches external JS files
 - One-click copy
-
-<img width="1280" height="800" alt="Capture d’écran 2026-06-14 à 17 52 24" src="https://github.com/user-attachments/assets/a4d8bed3-fca2-4d23-a1d3-cfa0166952e6" />
-
+<img width="1271" height="706" alt="Capture d’écran 2026-06-14 à 17 53 57" src="https://github.com/user-attachments/assets/9cc47c07-20a8-420b-9372-8d1a6d0c69c1" />
 
 ## Install
 `chrome://extensions` → Developer mode → Load unpacked
