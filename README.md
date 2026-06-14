@@ -1,3 +1,5 @@
+![DZsecret Banner](banner.png)
+
 # 🦅 DZsecret
 
 **First Algerian grep-style tool for extracting everything from webpages.**
