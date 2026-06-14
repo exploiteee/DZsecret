@@ -1,7 +1,7 @@
 
 # 🦅 DZsecret
 
-**First Algerian grep-style tool for extracting everything from webpages.**
+**First Algerian tool for extracting everything from webpages.**
 
 Finds: IPs, domains, URLs, paths, endpoints, emails, phones, API keys, tokens, passwords, JWT, ID cards, and more.
 
@@ -13,4 +13,4 @@ Finds: IPs, domains, URLs, paths, endpoints, emails, phones, API keys, tokens, p
 ## Install
 `chrome://extensions` → Developer mode → Load unpacked
 
-🇩🇿 Made in Algeria | License: GPL-3.0
+🇩🇿 Algerian tool for extracting everything from webpages
